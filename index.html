@@ -708,6 +708,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Enviar</button></div>
+              <input type="hidden" name="_captcha" value="false">
             </form>
 
           </div>
@@ -758,9 +759,13 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Nossa Newsletter</h4>
             <p>Inscreva-se em nossa newsletter para receber as últimas novidades e conteúdos exclusivos!</p>
-            <form action="https://formsubmit.co/info@vsquadrasesportivas.com" method="POST">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-              <textarea hidden="true" class="form-control" name="message" rows="5" value="Usuário gostaria de se inscrever para a newsletter" required></textarea>
+            <form action="https://formsubmit.co/info@vsquadrasesportivas.com" method="post">
+              <input type="email" name="email">
+              <textarea hidden="true" class="form-control" name="message" rows="5" required>
+                Usuário gostaria de se inscrever para a newsletter
+              </textarea>
+              <input type="submit" value="Subscribe">
+              <input type="hidden" name="_captcha" value="false">
             </form>
 
           </div>
